@@ -8,17 +8,19 @@ I needed to add a simple slider to a form that would step from 1 to 100 and upda
 
 ## Jetpack Compose
 
-Code: [GitHub]()
+Code: [GitHub](https://github.com/JH108/blog-posts/blob/main/code/SliderWithPercent/app/src/main/java/me/jessehill/sliderwithpercent/MainActivity.kt)
  
 Thoughts: I only spent about 30 minutes on this version, mostly because I tried to build my own slider first (the animation APIs are so nice) before using the built-in one and then reading the source to figure out how to clean up the track and change the Thumb shape. This was nearly the ideal UI experience with a smooth slider and instant updates to the input field. 
 
-GIF
+![Jetpack Compose Slider GIF](https://raw.githubusercontent.com/JH108/blog-posts/refs/heads/main/posts/resources/compose_slider_demo.gif)
 
 ## React Native
 
-Code: [GitHub]()
+Code: [GitHub](https://github.com/JH108/blog-posts/blob/main/code/slider-with-percent/app/(tabs)/index.tsx)
 
 Thoughts: I spent around 8x the time trying to get this implementation to look and feel at least close to how the Compose one does. For both implementations, I’ve got a local state variable that updates based on the slider’s change, and a computed variable memoized based on the first state value. I ended up digging into several GitHub issues and going down various rabbit trails in an attempt to have the slider behave like the onSlidingComplete version, and the input like the onValueChange version. 
+
+![React Native Slider GIF with two examples](https://raw.githubusercontent.com/JH108/blog-posts/refs/heads/main/posts/resources/react_native_slider_demo.gif)
 
 ## Closing 
 
